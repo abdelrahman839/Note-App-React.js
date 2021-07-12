@@ -1,0 +1,130 @@
+.page_design{
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_img{
+    object-fit: cover;
+    object-position: center ;
+    height: 100% !important;
+    width: 100%;
+}
+.input_style{
+    border-radius: 25px !important;
+}
+.btn_color{
+    background-color: #43C6AC !important;
+    color: #fff;
+    border-radius: 50px !important;
+}
+.btn_color:hover{
+    background-color: #78dac6 !important;
+}
+.form_height{
+    height: 100%;
+}
+.boderTop{
+    border-top-left-radius:5px  ;
+    border-bottom-left-radius:5px ;
+    
+}
+.boderBottom{
+    border-top-right-radius:5px ;
+    border-bottom-right-radius: 5px ;
+    
+}
+.F_T_T_D{
+    
+    animation-name: left_right;
+    animation-duration: .5s;
+}
+.delay_2{
+    animation-name: top_down;
+    animation-duration: .8s;
+}
+.delay_4{
+    animation-name: top_down;
+    animation-duration: 1s;
+}
+.delay_6{
+    animation-name: top_down;
+    animation-duration: 1.2s;
+}
+.delay_8{
+    animation-name: top_down;
+    animation-duration: 1.4s;
+}
+.delay_10{
+    animation-name: top_down;
+    animation-duration: 1.6s;
+}
+.delay_12{
+    animation-name: top_down;
+    animation-duration: 1.8s;
+}
+h3{
+    margin-bottom: 50px !important;
+    color: #43C6AC ;
+}
+@keyframes left_right {
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+        visibility: 0;
+    
+        }
+        100%{
+            transform: translateX(0px);
+        opacity: 1;
+        visibility: visible;
+    
+    
+        }
+}
+@keyframes top_down {
+    0%{
+    transform: translateY(-50px);
+    opacity: 0;
+    visibility: 0;
+
+    }
+    50%{
+        transform: translateY(-50px);
+        opacity: 0;
+        visibility: 0;
+    
+        }
+    100%{
+        transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+
+
+    }
+}
+
+@media screen and (max-width:992px) {
+    h3{
+        margin-bottom: 10px !important;
+    }
+    .form_height{
+        height: 50% !important;
+        width: 80% !important;
+    }
+    .boderTop{
+        border-top-left-radius:5px  ;
+        border-top-right-radius:5px ;
+        border-bottom-left-radius:0px ;
+        border-bottom-right-radius: 0px ;
+
+        
+    }
+    .boderBottom{
+        border-top-left-radius:0px  ;
+        border-top-right-radius:0px ;
+        border-bottom-left-radius:5px ;
+        border-bottom-right-radius: 5px ;
+        
+    }
+}

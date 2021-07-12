@@ -1,0 +1,122 @@
+*{
+    margin: 0px !important;
+    padding: 0px !important;
+    box-sizing: border-box !important;
+}
+.nav_bg{
+    background-color: rgba(226, 226, 226, 0.5);
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+
+}
+.logo h4{
+    color: rgb(226, 226, 226);
+
+}
+.logo :hover h4{
+    text-decoration: none !important; 
+    color:rgb(206, 205, 205);
+
+}
+.Nav_Links{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.Nav_Links li{
+    list-style: none;
+}
+.Nav_Links a{
+    color: rgb(226, 226, 226);
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.Nav_Links a:hover{
+    color:#43C6AC;
+    text-decoration: none;
+}
+.Nav_Action{
+    display: none !important;
+}
+.Nav_Action div{
+    width: 25px;
+    height: 3px;
+    margin: 5px !important;
+    background-color: rgb(226, 226, 226);
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width:1024px) {
+    .Nav_Links{
+        width: 60%;
+    }
+}
+@media screen and (max-width:768px) {
+    nav{
+        padding: 0 20px !important;
+    }
+    body{
+        overflow: hidden;
+    }
+    .Nav_Links li{
+        opacity: 0;
+        color: black !important;
+    }
+    .Nav_Links a{
+        color: black ;
+    }
+    .Nav_Links{
+        position: absolute;
+        top: 8vh;
+        right: 0px;
+        height: 92vh;
+        width: 50%;
+        background-color: rgb(226, 226, 226,.5);
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all .5s ease-in-out;
+        z-index: 1;
+    }
+    .Nav_Action{
+        display: block !important;
+        cursor: pointer;
+    }
+}
+.Nav_active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from{
+    opacity: 0;
+    transform: translateX(50px);
+    }to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}

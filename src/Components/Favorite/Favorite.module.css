@@ -1,0 +1,31 @@
+.note {
+    background: linear-gradient(#F9EFAF, #F7E98D);
+    transition: all 0.3s;
+}
+
+.note:hover {
+    box-shadow: 0px 23px 93px 1px rgba(0, 0, 0, 0.4);
+}
+
+.note i {
+    color: black;
+    font-size: 23px;
+    transition: all 0.3s;
+}
+
+
+
+.del:hover {
+    color: #F44336;
+    transform: rotate(-110deg);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:768px) {
+    .notes{
+        padding: 5px 50px !important;
+
+    }
+  
+}
