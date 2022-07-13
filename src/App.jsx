@@ -9,7 +9,6 @@ import ProtectedRoutes from './Components/ProtectedRoutes/ProtectedRoutes.jsx'
 import { connect } from 'react-redux'
 import Favorite from './Components/Favorite/Favorite.jsx'
 import { goToHome } from './redux/actions/actions.js'
-import Particles from 'react-particles-js'
 
 function App(props) {
 
@@ -18,26 +17,19 @@ function App(props) {
     <>
 
       <Navbar />
-      <div className="  h-100 w-100 ">
-        <Particles style={{
-          width: '100%',
-          height: '100%',
-          position: 'absolute',
-        }} params={{ particles: { number: { value: 80, } }, width: '100%', height: '100%', }} />
 
-        <Switch>
+      <Switch>
 
 
-          {props.Path === 'home' ? <ProtectedRoutes path="/home" component={Home} /> : <ProtectedRoutes path="/favorite" component={Favorite} />}
-          <Route path="/login" component={Login} />
-          <Route path="/register" component={Register} />
-          <Route path="/favorite" component={Favorite} />
+        {props.Path === 'home' ? <ProtectedRoutes path="/home" component={Home} /> : <ProtectedRoutes path="/favorite" component={Favorite} />}
+        <Route path="/login" component={Login} />
+        <Route path="/register" component={Register} />
+        <Route path="/favorite" component={Favorite} />
 
-          <Redirect exact from="/" to="/home" />
-          <Route path="/*" component={NotFound} />
+        <Redirect exact from="/" to="/home" />
+        <Route path="/*" component={NotFound} />
 
-        </Switch>
-      </div>
+      </Switch>
 
 
 
