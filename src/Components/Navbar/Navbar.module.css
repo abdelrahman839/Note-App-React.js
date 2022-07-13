@@ -70,7 +70,7 @@ nav{
         padding: 0 20px !important;
     }
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .Nav_Links li{
         opacity: 0;

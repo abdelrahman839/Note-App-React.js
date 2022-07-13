@@ -18,22 +18,28 @@ function App(props) {
     <>
 
       <Navbar />
-      <div className=" position-fixed h-100 w-100">
-        <Particles params={{ particles: { number: { value: 80, } }, width: '100%', height: '100%', }} />
+      <div className="  h-100 w-100 ">
+        <Particles style={{
+          width: '100%',
+          height: '100%',
+          position: 'absolute',
+        }} params={{ particles: { number: { value: 80, } }, width: '100%', height: '100%', }} />
+
+        <Switch>
+
+
+          {props.Path === 'home' ? <ProtectedRoutes path="/home" component={Home} /> : <ProtectedRoutes path="/favorite" component={Favorite} />}
+          <Route path="/login" component={Login} />
+          <Route path="/register" component={Register} />
+          <Route path="/favorite" component={Favorite} />
+
+          <Redirect exact from="/" to="/home" />
+          <Route path="/*" component={NotFound} />
+
+        </Switch>
       </div>
 
-      <Switch>
 
-
-        {props.Path === 'home' ? <ProtectedRoutes path="/home" component={Home} /> : <ProtectedRoutes path="/favorite" component={Favorite} />}
-        <Route path="/login" component={Login} />
-        <Route path="/register" component={Register} />
-        <Route path="/favorite" component={Favorite} />
-
-        <Redirect exact from="/" to="/home" />
-        <Route path="/*" component={NotFound} />
-
-      </Switch>
 
 
 

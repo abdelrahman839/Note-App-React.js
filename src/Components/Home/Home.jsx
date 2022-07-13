@@ -145,7 +145,7 @@ function Home() {
 
             {/* ================================================================= Note Modal =========================================== */}
 
-            <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade " id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <form className="" >
                     <div className="modal-dialog mx-auto">
                         <div className="modal-content ">

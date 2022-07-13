@@ -48,10 +48,10 @@ function Login(props) {
             <section className={`${LoginStyle.page_design}`}>
                 <div className="container h-100 d-flex justify-content-center align-items-center">
                     <div className="row justify-content-center align-items-center  h-80  ">
-                        <div className={`col-lg-4  shadow            ${LoginStyle.boderTop}           ${LoginStyle.form_height}    `} >
+                        <div className={`col-lg-4 col-md-6   shadow            ${LoginStyle.boderTop}           ${LoginStyle.form_height}    `} >
                             <img src={mainImg} className={`        ${LoginStyle.main_img}            ${LoginStyle.boderTop}  `} alt="" />
                         </div>
-                        <div className={`col-lg-4   d-flex justify-content-center align-items-center flex-column shadow   overflow-hidden              ${LoginStyle.boderBottom}              ${LoginStyle.form_height}      `}>
+                        <div className={`col-lg-4 col-md-6    d-flex justify-content-center align-items-center flex-column shadow   overflow-hidden              ${LoginStyle.boderBottom}              ${LoginStyle.form_height}      `}>
  
                             <form id='form_fade' className={`w-100 h-100 p-5 d-flex justify-content-center align-items-center flex-column overflow-hidden    `}>
                                 <h3 className= {` font-weight-bold   ${LoginStyle.F_T_T_D}`} >Welcome to Notes</h3>
