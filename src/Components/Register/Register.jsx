@@ -36,10 +36,10 @@ function Register(props) {
             <section className={`${RegisterStyle.page_design}`}>
                 <div className="container h-100 d-flex justify-content-center align-items-center">
                     <div className="row justify-content-center align-items-center  h-80 ">
-                        <div className={`col-lg-4  shadow            ${RegisterStyle.boderTop}           ${RegisterStyle.form_height}    `} >
+                        <div className={`col-lg-4 col-md-6  shadow            ${RegisterStyle.boderTop}           ${RegisterStyle.form_height}    `} >
                             <img src={mainImg} className={`          ${RegisterStyle.main_img}            ${RegisterStyle.boderTop}  `} alt="" />
                         </div>
-                        <div className={`col-lg-4   d-flex justify-content-center align-items-center flex-column shadow                ${RegisterStyle.boderBottom}              ${RegisterStyle.form_height}      `}>
+                        <div className={`col-lg-4 col-md-6   d-flex justify-content-center align-items-center flex-column shadow                ${RegisterStyle.boderBottom}              ${RegisterStyle.form_height}      `}>
                             <form  className="w-100  h-100 p-5   d-flex justify-content-center align-items-center flex-column overflow-hidden ">
                             <h3 className={` font-weight-bold  ${RegisterStyle.F_T_T_D}`}>Create Account</h3>
 
